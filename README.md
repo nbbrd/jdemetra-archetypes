@@ -21,10 +21,10 @@ Available templates:
 
 | Key | Value |
 | --- | ----- |
-| Group ID | `com.github.nbbrd.jdemetra-archetypes` |
+| Group ID | `be.nbb.demetra` |
 | Artifact ID | `demetra-archetype-quickstart` |
-| Version | `-SNAPSHOT` |
-| Repository | `https://jitpack.io` |
+| Version | `2.1.0-SNAPSHOT` |
+| Repository | `https://oss.jfrog.org/artifactory/oss-snapshot-local` |
 
 4. In step 3, fill the required properties.
 
@@ -35,7 +35,7 @@ Available templates:
 Open a terminal and copy/paste:
 
 ```Shell
-mvn archetype:generate -DarchetypeRepository=https://jitpack.io -DarchetypeGroupId=com.github.nbbrd.jdemetra-archetypes -DarchetypeArtifactId=demetra-archetype-quickstart -DarchetypeVersion=-SNAPSHOT
+mvn archetype:generate -DarchetypeRepository=https://oss.jfrog.org/artifactory/oss-snapshot-local -DarchetypeGroupId=be.nbb.demetra -DarchetypeArtifactId=demetra-archetype-quickstart -DarchetypeVersion=2.1.0-SNAPSHOT
 ```
 
 Fill in the required properties and proceed.

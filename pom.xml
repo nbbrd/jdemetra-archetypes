@@ -3,7 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.nbbrd.jdemetra-archetypes</groupId>
+    <groupId>be.nbb.demetra</groupId>
     <artifactId>demetra-archetype-parent</artifactId>
     <version>2.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -32,6 +32,17 @@
         <module>demetra-archetype-quickstart</module>
     </modules>
 
+    <distributionManagement>
+        <repository>
+            <id>oss-jfrog-artifactory-releases</id>
+            <url>https://oss.jfrog.org/artifactory/oss-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>oss-jfrog-artifactory-snapshots</id>
+            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
     <build>
         <extensions>
             <extension>
