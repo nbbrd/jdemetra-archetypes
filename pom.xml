@@ -34,6 +34,8 @@
     </properties>
     
     <modules>
+        <module>demetra-archetype-core</module>
+        <module>demetra-archetype-desktop</module>
         <module>demetra-archetype-quickstart</module>
     </modules>
 
@@ -66,25 +68,12 @@
                         </execution>
                     </executions>
                 </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>${maven-javadoc-plugin.version}</version>
-                    <executions>
-                        <execution>
-                            <id>attach-javadocs</id>
-                            <goals>
-                                <goal>jar</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
             </plugins>
         </pluginManagement>
     </build>
     
     <profiles>
-        <!-- Deploy SNAPSHOTS to jfrog with sources & javadoc -->
+        <!-- Deploy SNAPSHOTS to jfrog with sources -->
         <profile>
             <id>deploy-snapshots</id>
             <distributionManagement>
@@ -99,15 +88,11 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
                     </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                    </plugin>
                 </plugins>
             </build>
         </profile>
 
-        <!-- Deploy RELEASES to jfrog with sources & javadoc -->
+        <!-- Deploy RELEASES to jfrog with sources -->
         <profile>
             <id>deploy-releases</id>
             <distributionManagement>
@@ -121,10 +106,6 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
                     </plugin>
                 </plugins>
             </build>

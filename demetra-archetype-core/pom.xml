@@ -9,9 +9,9 @@
         <version>2.2.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>demetra-archetype-quickstart</artifactId>
+    <artifactId>demetra-archetype-core</artifactId>
     <packaging>maven-archetype</packaging>
     
-    <name>Demetra Archetype - Bundle</name>
-    <description>Maven template to quickly create an extension for JDemetra+</description>    
+    <name>Demetra Archetype - Core</name>
+    <description>Maven template to quickly create a core extension for JDemetra+</description>    
 </project>
