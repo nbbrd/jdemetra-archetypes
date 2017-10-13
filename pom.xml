@@ -36,7 +36,7 @@
     <modules>
         <module>demetra-archetype-core</module>
         <module>demetra-archetype-desktop</module>
-        <module>demetra-archetype-quickstart</module>
+        <module>demetra-archetype-bundle</module>
     </modules>
 
     <build>
