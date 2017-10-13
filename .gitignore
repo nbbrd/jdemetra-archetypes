@@ -1,1 +1,3 @@
-/demetra-archetype-quickstart/target
+/demetra-archetype-core/target/
+/demetra-archetype-desktop/target/
+/demetra-archetype-bundle/target
