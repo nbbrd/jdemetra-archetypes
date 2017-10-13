@@ -80,8 +80,8 @@
             <url>http://bits.netbeans.org/maven2/</url>
         </repository>        
         <repository>
-            <id>joinup-releases</id>
-            <url>https://joinup.ec.europa.eu/nexus/content/repositories/releases/</url>
+            <id>oss-jfrog-artifactory-releases</id>
+            <url>https://oss.jfrog.org/artifactory/oss-release-local</url>
         </repository>
     </repositories>
   
